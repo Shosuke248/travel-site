@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <div class="header-container">
+   <img src="your-image.jpg" alt="タイトル画像">
+   </div>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Adventure</h1>
+        <p>新しい世界へ出かけよう</p>
+        <button onclick="toggledetails()">詳しく見る</button>
+        <div id="details" style="display:none;">
+            <p>詳細文章</p>
+        </div>
+
+    </header>
+    <main>
+        <section>
+            <div class="photo">
+            <img src="image1.jpg" alt="自然のイメージ">
+            <img src="image2.jpg" alt="自然のイメージ">
+            <img src="image3.jpg" alt="自然のイメージ">
+            <img src="image4.jpg" alt="自然のイメージ">
+        </div>
+            
+            <h2>旅の魅力</h2>
+            <p>旅は素晴らしい！！</p>
+           
+            <button onclick="toggledetailsinfo()">お問い合わせ</button>
+        <div id="otoiawase" style="display:none;">
+            <p>　　　　　　　　代表電話番号　123-456-7890　　　　　　　　　　　　 代表メールアドレス　example@example.com
+
+            </p>
+        </div>
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Adventure. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+<script>
+        function toggledetails() {
+            const details = document.getElementById("details");
+            if (details.style.display === "none") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+</script>
+
+<script>
+        function toggledetailsinfo() {
+            const details = document.getElementById("otoiawase");
+            if (details.style.display === "none") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+</script>
